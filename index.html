@@ -2,6 +2,11 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio Tomi Tapia</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/biografia.css">
   <link rel="stylesheet" href="css/same.css">
@@ -9,151 +14,190 @@
   <link rel="stylesheet" href="css/habilidades.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/puntero.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>Portafolio Tomi Tapia</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f7f7f7;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 12px;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+    .hero-image img:hover {
+      transform: scale(1.05) rotate(-1deg);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+  </style>
 </head>
-<body>
-<button id="backToTop" onclick="scrollToTop()"><img src="assets/img/scroll.png" alt=""></button>
 
-  <section class="hero">
-    <div class="hero-text">
+<body>
+
+<button id="backToTop" onclick="scrollToTop()">
+  <img src="assets/img/scroll.png" alt="">
+</button>
+
+<!-- HERO -->
+<section class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-lg-6 mb-4">
       <h1>Tomi Tapia</h1>
       <p>Enfermero Profesional 🇦🇷 - MAT. N°9809<br>
       Apasionado por la atención prehospitalaria, SAME y cuidado humanizado.</p>
 
-      <div class="hero-icons">
-        <a href="https://instagram.com/tomi.tapia.92" target="_blank"><img src="assets/img/instagram.png" alt="" srcset=""></a>
-        <a href="tel:+5493408433314"><img src="assets/img/social.png" alt="" srcset=""></a>
-        <a href="mailto:Tomastapia111@gmail.com"><img src="assets/img/gmail.png" alt="" srcset=""></a>
-        <a href="assets/doc/cv.pdf" target="_blank"><img src="assets/img/curriculum-vitae.png" alt="" srcset=""></a>
+      <div class="d-flex gap-3 mb-3">
+        <a href="https://instagram.com/tomi.tapia.92" target="_blank">
+          <img src="assets/img/instagram.png" alt="" width="30">
+        </a>
+        <a href="tel:+5493408433314">
+          <img src="assets/img/social.png" alt="" width="30">
+        </a>
+        <a href="mailto:Tomastapia111@gmail.com">
+          <img src="assets/img/gmail.png" alt="" width="30">
+        </a>
+        <a href="assets/doc/cv.pdf" target="_blank">
+          <img src="assets/img/curriculum-vitae.png" alt="" width="30">
+        </a>
       </div>
 
-      <a class="contact-btn" href="tel:+5493408433314">Contactame</a>
+      <a class="btn btn-primary contact-btn" href="tel:+5493408433314">Contactame</a>
     </div>
 
-    <div class="hero-image">
-      <img src="assets/img/tomi.jpg" alt="Tomi Tapia">
+    <div class="col-lg-6 hero-image center">
+      <img src="assets/img/tomi.jpg" alt="Tomi Tapia" class="img-fluid">
     </div>
-  </section>
+  </div>
+</section>
 
-    <section class="section">
-    <div class="section-text">
+<!-- BIO -->
+<section class="container py-5 section-images">
+  <div class="row align-items-center">
+    <div class="col-lg-6">
       <h2>Biografía</h2>
-      <p>Soy enfermero matriculado de la Cruz Roja + Argentina. He trabajado en clínicas, geriátricos y hospitales,
-      colaborando con equipos interdisciplinarios para brindar asistencia humanizada y eficaz.
-      Me apasiona la atención de urgencias y la formación continua para dar lo mejor de mí
-      en cada guardia o traslado.</p>
+      <p>
+        Soy enfermero matriculado de la Cruz Roja Argentina. He trabajado en clínicas, geriátricos y hospitales,
+        colaborando con equipos interdisciplinarios para brindar asistencia humanizada y eficaz.
+        Me apasiona la atención de urgencias y la formación continua para dar lo mejor de mí
+        en cada guardia o traslado.
+      </p>
     </div>
-
-    <div class="section-images">
-      <img src="assets/img/cruz_roja_argentina.webp" alt="Imagen de trabajo">
+    <div class="col-lg-6">
+      <img src="assets/img/cruz_roja_argentina.webp" alt="Imagen de trabajo" class="img-fluid rounded">
     </div>
-  </section>
-
-  <section class="section-same">
-    <div class="section-header-same">
-      <div>Trabajo</div>
-    </div>
-
-    <div class="section-content-same">
-      <div class="left">
-        <img src="assets/img/same.webp" alt="Ambulancia SAME">
-        <h1>S.A.M.E</h1>
-      </div>
-
-      <div class="right">
-        <p>
-          Trabajo en el servicio público de emergencias médicas prehospitalarias que funciona principalmente en la Ciudad de San Cristóbal y en la zona.<br>
-          ¿Qué hago en el S.A.M.E?
-        </p>
-
-      <div class="tasks">
-  <div>
-    Traslado seguro
-    <img src="assets/img/traslado-seguro.png" alt="">
   </div>
-  <div>
-    Asistencia inmediata
-    <img src="assets/img/asistencia-inmediata.png" alt="">
-  </div>
-  <div>
-    Valoración inicial
-    <img src="assets/img/valoracion-inicial.png" alt="">
-  </div>
-  <div>
-    Comunicación
-    <img src="assets/img/comunicación-eficaz.png" alt="">
-  </div>
-  <div>
-    Estabilización
-    <img src="assets/img/estabilidad.png" alt="">
-  </div>
-  <div>
-    Registro
-    <img src="assets/img/registro.png" alt="">
-  </div>
-</div>
+</section>
+
+<!-- SAME -->
+<section class="container py-5 section-content-same">
+  <h3>Trabajo</h3>
+  <div class="row align-items-start">
+    <div class="col-lg-6 mb-4">
+      <img src="assets/img/same.webp" alt="Ambulancia SAME" class="img-fluid rounded">
+      <h1>S.A.M.E</h1>
     </div>
-  </section>
-
-  <section class="section-hospital">
-    <div class="section-header-hospital">
-      <div>Trabajo</div>
-    </div>
-
-    <div class="section-content-hospital">
-      <div class="hospital-text">
-        <h2>Hospital San Cristóbal</h2>
-        <h3>‘Julio Cesar Villanueva’</h3>
-        <p>
-          Rotación por diferentes servicios: clínica médica, guardia, consultorio externo,
-          quirófano y vacunatorio. Experiencia integral en atención hospitalaria, preparación
-          de pacientes, asistencia en procedimientos y administración de medicación supervisada.
-        </p>
-      </div>
-
-      <div class="hospital-images">
-        <img src="assets/img/hospital-1.webp" alt="Pasillo hospital">
-        <img src="assets/img/hospital-2.webp" alt="Personal hospitalario">
+    <div class="col-lg-6">
+      <p>
+        Trabajo en el servicio público de emergencias médicas prehospitalarias que funciona principalmente en la Ciudad de San Cristóbal y en la zona.<br>
+        ¿Qué hago en el S.A.M.E?
+      </p>
+      <div class="row tasks">
+        <div class="col-6 col-md-4 text-center mb-4">
+          Traslado seguro<br>
+          <img src="assets/img/traslado-seguro.png" alt="">
+        </div>
+        <div class="col-6 col-md-4 text-center mb-4">
+          Asistencia inmediata<br>
+          <img src="assets/img/asistencia-inmediata.png" alt="">
+        </div>
+        <div class="col-6 col-md-4 text-center mb-4">
+          Valoración inicial<br>
+          <img src="assets/img/valoracion-inicial.png" alt="">
+        </div>
+        <div class="col-6 col-md-4 text-center mb-4">
+          Comunicación<br>
+          <img src="assets/img/comunicación-eficaz.png" alt="">
+        </div>
+        <div class="col-6 col-md-4 text-center mb-4">
+          Estabilización<br>
+          <img src="assets/img/estabilidad.png" alt="">
+        </div>
+        <div class="col-6 col-md-4 text-center mb-4">
+          Registro<br>
+          <img src="assets/img/registro.png" alt="">
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-   <section class="habilidades">
-    <div class="habilidades-header">
-      <h2>HABILIDADES TÉCNICAS QUE ME DESTACAN.</h2>
+<!-- Hospital -->
+<section class="container py-5 ">
+  <h3>Trabajo</h3>
+  <div class="row align-items-center">
+    <div class="col-lg-6 mb-4">
+      <h2>Hospital San Cristóbal</h2>
+      <h3>‘Julio Cesar Villanueva’</h3>
+      <p>
+        Rotación por diferentes servicios: clínica médica, guardia, consultorio externo,
+        quirófano y vacunatorio. Experiencia integral en atención hospitalaria, preparación
+        de pacientes, asistencia en procedimientos y administración de medicación supervisada.
+      </p>
+    </div>
+    <div class="col-lg-6 hospital-images">
+      <img src="assets/img/hospital-1.webp" alt="Pasillo hospital" class="img-fluid rounded mb-3">
+      <img src="assets/img/hospital-2.webp" alt="Personal hospitalario" class="img-fluid rounded">
+    </div>
+  </div>
+</section>
+
+<!-- Habilidades -->
+<section class="container py-5 habilidades">
+  <h2 class="mb-4 text-center">HABILIDADES TÉCNICAS QUE ME DESTACAN</h2>
+  <div class="row g-4">
+    <!-- Habilidad 1 -->
+    <div class="col-6 col-md-4 col-lg-2 text-center habilidad" onclick="openModal('modal1')">
+      <img src="assets/img/control-de-signos-vitales.png" alt="Toma y control de signos vitales" class="img-fluid mb-2">
+      <p>Toma y control de signos vitales</p>
     </div>
 
-    <div class="habilidades-grid">
-      <div class="habilidad" onclick="openModal('modal1')">
-        <img src="assets/img/control-de-signos-vitales.png" alt="Toma y control de signos vitales">
-        <div>Toma y control de signos vitales</div>
-      </div>
-      <div class="habilidad" onclick="openModal('modal2')">
-        <img src="assets/img/Administracion-de-medicación.png" alt="Administración de medicación">
-        <div>Administración de medicación</div>
-      </div>
-      <div class="habilidad" onclick="openModal('modal3')">
-        <img src="assets/img/higiene-y-confort.png" alt="Técnicas de higiene y confort">
-        <div>Técnicas de higiene y confort</div>
-      </div>
-      <div class="habilidad" onclick="openModal('modal4')">
-        <img src="assets/img/enfermería-básica.png" alt="Curaciones y técnicas de enfermería básica">
-        <div>Curaciones y técnicas de enfermería básica</div>
-      </div>
-      <div class="habilidad" onclick="openModal('modal5')">
-        <img src="assets/img/control-de-exámenes.png" alt="Toma de muestras y control de exámenes">
-        <div>Toma de muestras y control de exámenes</div>
-      </div>
-      <div class="habilidad" onclick="openModal('modal6')">
-        <img src="assets/img/registro-clínica.png" alt="Registro y comunicación de información clínica">
-        <div>Registro y comunicación de información clínica</div>
-      </div>
+    <!-- Habilidad 2 -->
+    <div class="col-6 col-md-4 col-lg-2 text-center habilidad" onclick="openModal('modal2')">
+      <img src="assets/img/Administracion-de-medicación.png" alt="Administración de medicación" class="img-fluid mb-2">
+      <p>Administración de medicación</p>
     </div>
-  </section>
+
+    <!-- Habilidad 3 -->
+    <div class="col-6 col-md-4 col-lg-2 text-center habilidad" onclick="openModal('modal3')">
+      <img src="assets/img/higiene-y-confort.png" alt="Técnicas de higiene y confort" class="img-fluid mb-2">
+      <p>Técnicas de higiene y confort</p>
+    </div>
+
+    <!-- Habilidad 4 -->
+    <div class="col-6 col-md-4 col-lg-2 text-center habilidad" onclick="openModal('modal4')">
+      <img src="assets/img/enfermería-básica.png" alt="Curaciones y técnicas de enfermería básica" class="img-fluid mb-2">
+      <p>Curaciones y técnicas de enfermería básica</p>
+    </div>
+
+    <!-- Habilidad 5 -->
+    <div class="col-6 col-md-4 col-lg-2 text-center habilidad" onclick="openModal('modal5')">
+      <img src="assets/img/control-de-exámenes.png" alt="Toma de muestras y control de exámenes" class="img-fluid mb-2">
+      <p>Toma de muestras y control de exámenes</p>
+    </div>
+
+    <!-- Habilidad 6 -->
+    <div class="col-6 col-md-4 col-lg-2 text-center habilidad" onclick="openModal('modal6')">
+      <img src="assets/img/registro-clínica.png" alt="Registro y comunicación de información clínica" class="img-fluid mb-2">
+      <p>Registro y comunicación de información clínica</p>
+    </div>
+  </div>
+</section>
+
 
  <!-- Modals -->
 <div id="modal1" class="modal">
@@ -204,56 +248,38 @@
   </div>
 </div>
 
-
-
-
+<!-- Footer -->
 <footer class="site-footer">
-  <div class="footer-content">
-    <h3>Tomi Tapia</h3>
-    <p>Enfermero Profesional | MAT. N°9809</p>
-
-
-    <div class="footer-credits">
-      <p>Creador: Tiago Raminelli</p>
-      <a href="https://github.com/tiagoraminelli" target="_blank">
-        <img class="github-icon" src="assets/img/github.png" alt="GitHub">
-      </a>
-      <a href="https://www.linkedin.com/in/tiago-raminelli" target="_blank">
-        <img class="linkedin-icon" src="assets/img/linkedin.png" alt="LinkedIn">
-      </a>
-    </div>
-
-    <p class="copyright">
-      &copy; 2025 Tiago Raminelli. Todos los derechos reservados.
-    </p>
+  <h3>Tomi Tapia</h3>
+  <p>Enfermero Profesional | MAT. N°9809</p>
+  <div class="mt-3 footer-socials">
+    <a href="https://github.com/tiagoraminelli" target="_blank">
+      <img src="assets/img/github.png" alt="GitHub">
+    </a>
+    <a href="https://www.linkedin.com/in/tiago-raminelli" target="_blank">
+      <img src="assets/img/linkedin.png" alt="LinkedIn">
+    </a>
   </div>
+  <p class="mt-3 mb-0">&copy; 2025 Tiago Raminelli. Todos los derechos reservados.</p>
 </footer>
 
-
-
-  <script>
-    function openModal(id) {
-      document.getElementById(id).style.display = 'flex';
-    }
-    function closeModal(id) {
-      document.getElementById(id).style.display = 'none';
-    }
-  </script>
-
- <script>
+<!-- Scripts -->
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   window.onscroll = function() {
     const backToTop = document.getElementById("backToTop");
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (window.scrollY > 200) {
       backToTop.classList.add("show");
     } else {
       backToTop.classList.remove("show");
     }
-  };
-
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 </script>
 
+<!-- Bootstrap JS (Opcional) -->
+<script src="js/openModal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

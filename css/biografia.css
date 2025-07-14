@@ -1,35 +1,3 @@
- .section {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh; /* ocupa toda la pantalla */
-      padding: 50px 80px;
-      box-sizing: border-box;
-    }
-
-    .section-text {
-      flex: 1 1 400px;
-      max-width: 600px;
-      padding: 20px;
-    }
-
-    .section-text h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    .section-text p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    .section-images {
-      flex: 1 1 400px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
 
     .section-images img {
       width: 100%;
@@ -42,18 +10,3 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     }
 
-    @media (max-width: 900px) {
-      .section {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .section-images {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-
-      .section-images img {
-        width: 48%;
-      }
-    }

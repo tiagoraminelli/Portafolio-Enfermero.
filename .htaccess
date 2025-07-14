@@ -1,0 +1,10 @@
+# Activar motor de reescritura
+RewriteEngine On
+
+# Permitir solo index.html
+RewriteCond %{REQUEST_URI} !^/index\.html$
+RewriteCond %{REQUEST_URI} !^/$
+RewriteRule ^.*$ - [F,L]
+
+# Opcional: Evitar listar carpetas
+Options -Indexes

@@ -1,0 +1,17 @@
+# Ignorar archivos sensibles
+.env
+config/secrets.json
+
+# Ignorar carpetas de logs
+logs/
+
+# Ignorar archivos temporales
+*.tmp
+*.log
+
+# Ignorar compilados
+node_modules/
+dist/
+
+# ignorar archivos de sistema
+root.html
