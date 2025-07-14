@@ -1,0 +1,118 @@
+    .section-hospital {
+      font-family: Montserrat, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 50px 80px;
+      box-sizing: border-box;
+    }
+
+    .section-header-hospital {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .section-content-hospital {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .hospital-text {
+      flex: 1 1 300px;
+      max-width: 350px;
+    }
+
+    .hospital-text h2 {
+      font-size: 32px;
+      margin: 0 0 10px;
+    }
+
+    .hospital-text h3 {
+      font-size: 20px;
+      margin: 0 0 20px;
+      font-weight: normal;
+      font-style: italic;
+    }
+
+    .hospital-text p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .hospital-images {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      margin-left: 20px;
+      flex: 1 1 300px;
+    }
+
+    .hospital-images img {
+      max-width: 300px;
+      max-height: 100%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      object-fit: cover;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      will-change: transform;
+    }
+
+    .hospital-images img:hover {
+      transform: scale(1.05) rotate(3deg);
+      transition: transform 0.3s ease;
+    }
+
+    .hospital-images img:first-child {
+      box-shadow:rgba(0, 0, 0, 0.2) 0 0 10px;
+    }
+
+/* Tablet: una imagen al lado, la otra abajo */
+@media (max-width: 768px) {
+  .section-content-hospital {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hospital-text {
+    flex: 1 1 100%;
+  }
+
+  .hospital-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hospital-images img {
+    flex: 1 1 50%;
+  }
+
+  .hospital-images img:last-child {
+    flex: 1 1 100%;
+  }
+}
+
+/* Celular: todo en columna */
+@media (max-width: 480px) { 
+  .section-content-hospital {
+    flex-direction: column;
+  }
+
+  .hospital-text,
+  .hospital-images {
+    flex: 1 1 100%;
+  }
+
+  .hospital-images {
+    flex-direction: column;
+  }
+
+  .hospital-images img {
+    flex: 1 1 100%;
+  }
+}
+    
