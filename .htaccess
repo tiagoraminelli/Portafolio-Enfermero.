@@ -1,10 +1,11 @@
-# Activar motor de reescritura
 RewriteEngine On
 
-# Permitir solo index.html
+# Permitir index.html y carpetas necesarias
 RewriteCond %{REQUEST_URI} !^/index\.html$
 RewriteCond %{REQUEST_URI} !^/$
+RewriteCond %{REQUEST_URI} !^/assets/
+RewriteCond %{REQUEST_URI} !^/css/
+RewriteCond %{REQUEST_URI} !^/js/
 RewriteRule ^.*$ - [F,L]
 
-# Opcional: Evitar listar carpetas
 Options -Indexes
