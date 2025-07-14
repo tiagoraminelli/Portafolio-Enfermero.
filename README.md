@@ -1,34 +1,105 @@
-# Tomi-Landing
+# Portafolio Enfermero
 
-Portafolio Profesional - Tomi Tapia
-Este proyecto consiste en una landing page moderna y responsiva diseñada para presentar el perfil profesional de Tomi Tapia, Técnico Superior en Enfermería. La página web incluye secciones detalladas que resaltan la experiencia laboral, habilidades, formación académica, galería de imágenes, videos de presentación, y un formulario de contacto funcional.
+**Repositorio:** [Portafolio-Enfermero](https://github.com/tiagoraminelli/Portafolio-Enfermero)
+**Autor:** Tiago Raminelli
 
-Características principales
-Diseño responsivo y optimizado para dispositivos móviles y escritorio.
+---
 
-Uso avanzado de Bootstrap 5 para una interfaz elegante y funcional.
+## Descripción
 
-Navegación intuitiva con menú fijo y colapsable.
+Este proyecto es una landing page desarrollada para presentar el perfil profesional de Tomi Tapia, enfermero matriculado en Argentina (Matrícula N°9809).
+El objetivo es mostrar de forma clara la biografía, experiencias laborales en SAME y Hospital San Cristóbal, junto con habilidades técnicas específicas según el reglamento argentino de enfermería.
 
-Sección de experiencia laboral en formato acordeón para facilitar la lectura.
+---
 
-Galería de imágenes con carrusel interactivo.
+## Características principales
 
-Video de presentación integrado con modal para testimonios.
+- Biografía profesional y experiencia resumida.
+- Secciones con imágenes y textos organizados.
+- Despliegue de habilidades técnicas mediante modales.
+- Botón de scroll hacia arriba con transición suave.
+- Footer profesional en gris oscuro, con contacto y créditos.
+- Diseño responsive optimizado para escritorio, tablet y dispositivos móviles.
+- Código HTML5, CSS3 y JavaScript sin dependencias externas ni frameworks.
 
-Formulario de contacto con validación y notificaciones (toasts) para mejorar la experiencia del usuario.
+---
 
-Integración de iconos con Bootstrap Icons para mayor claridad visual.
+## Estructura de carpetas
 
-Tecnologías utilizadas
-HTML5
 
-CSS3 (Bootstrap 5)
+Portafolio-Enfermero/
 
-JavaScript (para interacción y validación)
+│
 
-Bootstrap Icons
+├── index.html
 
-Objetivo del proyecto
-Crear una plataforma digital profesional para mostrar la trayectoria y capacidades de un técnico en enfermería, facilitando la conexión con potenciales empleadores, colegas y pacientes.
+├── css/
 
+│   ├── style.css
+
+│   ├── biografia.css
+
+│   ├── same.css
+
+│   ├── hospital.css
+
+│   ├── habilidades.css
+
+│
+
+├── assets/
+
+│   ├── img/
+
+│   ├── doc/
+
+│
+
+└── README.md
+
+
+---
+## Tecnologías utilizadas
+
+- HTML5
+- CSS3 (Media Queries, Flexbox)
+- JavaScript básico para interacción de modales y scroll
+- Google Fonts (Montserrat)
+---
+## Instalación
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/tiagoraminelli/Portafolio-Enfermero.git
+   ```
+
+
+2. Abrir `index.html` en un navegador.
+3. Personalizar imágenes, datos de contacto o estilos según necesidad.
+
+---
+
+## Funcionalidades técnicas
+
+* **Responsive Design:** Secciones adaptables con media queries para reorganizar imágenes y texto en desktop, tablet y mobile.
+* **Modales interactivos:** Cada habilidad técnica abre un modal con descripción detallada.
+* **Scroll To Top:** Botón flotante que aparece al hacer scroll y retorna suavemente al inicio.
+* **Footer:** Fondo gris oscuro, tipografía clara, enlaces de contacto y créditos organizados.
+
+---
+
+## Autor
+
+**Creador y desarrollador:** Tiago Raminelli
+
+**LinkedIn:** [https://www.linkedin.com/in/tiago-raminelli](https://www.linkedin.com/in/tiago-raminelli)
+
+**GitHub:** [https://github.com/tiagoraminelli](https://github.com/tiagoraminelli)
+
+---
+
+## Licencia
+
+MIT
+
+Este proyecto es de uso libre. Puedes modificarlo o adaptarlo según tus necesidades.
